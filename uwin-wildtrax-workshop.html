@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Alex MacPhail">
+<meta name="author" content="Seth Magle">
+<meta name="author" content="Kim Rivera">
+<meta name="author" content="Mason Fidino">
+<meta name="author" content="Dianne Russell">
+
+<title>UWIN Summit: Data Science and Technology Workshop</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="uwin-wildtrax-workshop_files/libs/clipboard/clipboard.min.js"></script>
+<script src="uwin-wildtrax-workshop_files/libs/quarto-html/quarto.js"></script>
+<script src="uwin-wildtrax-workshop_files/libs/quarto-html/popper.min.js"></script>
+<script src="uwin-wildtrax-workshop_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="uwin-wildtrax-workshop_files/libs/quarto-html/anchor.min.js"></script>
+<link href="uwin-wildtrax-workshop_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="uwin-wildtrax-workshop_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="uwin-wildtrax-workshop_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="uwin-wildtrax-workshop_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="uwin-wildtrax-workshop_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#agenda" id="toc-agenda" class="nav-link active" data-scroll-target="#agenda">Agenda</a></li>
+  <li><a href="#workshop-sections" id="toc-workshop-sections" class="nav-link" data-scroll-target="#workshop-sections">Workshop Sections</a>
+  <ul class="collapse">
+  <li><a href="#welcome-and-framing-the-session-10-mins" id="toc-welcome-and-framing-the-session-10-mins" class="nav-link" data-scroll-target="#welcome-and-framing-the-session-10-mins">1. Welcome and Framing the Session (10 mins)</a></li>
+  <li><a href="#the-research-data-lifecycle-10-mins" id="toc-the-research-data-lifecycle-10-mins" class="nav-link" data-scroll-target="#the-research-data-lifecycle-10-mins">2. The Research Data Lifecycle (10 mins)</a></li>
+  <li><a href="#identifying-pinch-points-25-mins" id="toc-identifying-pinch-points-25-mins" class="nav-link" data-scroll-target="#identifying-pinch-points-25-mins">3. Identifying Pinch Points (25 mins)</a></li>
+  <li><a href="#a-success-story-with-the-city-of-edmonton-15-mins" id="toc-a-success-story-with-the-city-of-edmonton-15-mins" class="nav-link" data-scroll-target="#a-success-story-with-the-city-of-edmonton-15-mins">4. A Success Story with the City of Edmonton (15 mins)</a></li>
+  <li><a href="#building-a-shared-vision-for-collaboration-50-mins" id="toc-building-a-shared-vision-for-collaboration-50-mins" class="nav-link" data-scroll-target="#building-a-shared-vision-for-collaboration-50-mins">5. Building a Shared Vision for Collaboration (50 mins)</a></li>
+  <li><a href="#wrap-up-and-closing-notes-10-mins" id="toc-wrap-up-and-closing-notes-10-mins" class="nav-link" data-scroll-target="#wrap-up-and-closing-notes-10-mins">6. Wrap-up and Closing Notes (10 mins)</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">UWIN Summit: Data Science and Technology Workshop</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Alex MacPhail </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Biodiversity Pathways Ltd.
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Seth Magle </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Urban Wildlife Information Network
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Kim Rivera </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Urban Wildlife Information Network
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mason Fidino </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Urban Wildlife Information Network
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Dianne Russell </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Institue for Conservation Leadership
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="assets/wildtrax-uwin-organizations.png" class="img-fluid"></p>
+<p><strong>Duration:</strong> 2 hours<br>
+<strong>Goal:</strong> Build a shared understanding of how data science and technology can better support collaborative research, identify barriers and opportunities, and create actionable next steps.</p>
+<p>By the end of the session, participants will:</p>
+<ul>
+<li>Have a shared understanding of the data lifecycle.<br>
+</li>
+<li>Identify top barriers and opportunities for collaboration.<br>
+</li>
+<li>Feel equipped with knowledge to move forward and reduce fear around technology adoption.</li>
+</ul>
+<section id="agenda" class="level2">
+<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<ul>
+<li><strong>20 mins</strong> – Welcome, framing the session, and overview of the research data lifecycle<br>
+</li>
+<li><strong>25 mins</strong> – Individual worksheet activity: Identifying pinch points<br>
+</li>
+<li><strong>15 mins</strong> – A success story in Edmonton<br>
+</li>
+<li><strong>50 mins</strong> – Group discussion: Building a shared vision for collaboration<br>
+</li>
+<li><strong>10 mins</strong> – Wrap-up and closing notes</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" style="background-color: #f4f4f4; padding: 20px;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>We intend to objectively meet people where they are, and focus-in on where the <strong>pinch points</strong> are in their workflows.<br>
+</li>
+<li>Use <strong>Mentimeter</strong> for anonymous input and to gather diverse perspectives.<br>
+</li>
+<li>Using <strong>home groups</strong> to synthesize ideas and bring them back together.<br>
+</li>
+<li>Refine Mentimeter polls to ensure questions are clear and responses are actionable.<br>
+</li>
+<li>Identify missing elements:
+<ul>
+<li>Data sharing practices</li>
+<li>Discuss future UWIN needs</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="workshop-sections" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-sections">Workshop Sections</h2>
+<section id="welcome-and-framing-the-session-10-mins" class="level3">
+<h3 class="anchored" data-anchor-id="welcome-and-framing-the-session-10-mins">1. Welcome and Framing the Session (10 mins)</h3>
+<p><strong>Presenter:</strong> Alex MacPhail <br> <strong>Purpose:</strong> Introduce <a href="https://www.widltrax.ca">WildTrax</a> and contextualize it within big data and ecological research.</p>
+<p><strong>Content:</strong></p>
+<ul>
+<li>Introductions (WildTrax team)</li>
+<li>Importance of data science and technology in ecological research</li>
+<li>Showcase WildTrax and its diverse network of partners</li>
+<li>Workshop goals:
+<ul>
+<li>Bridge field ecology and big data with software<br>
+</li>
+<li>Identify current limitations and opportunities<br>
+</li>
+<li>Define next steps for collective data sharing and integration using WildTrax</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" style="background-color: #f4f4f4; padding: 20px;">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+💡 Mentimeter Icebreaker
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>In <strong>one word</strong>, what’s your biggest challenge with data right now?</p>
+<p>Jump in and share — no wrong answers, and your response is completely anonymous!</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-research-data-lifecycle-10-mins" class="level3">
+<h3 class="anchored" data-anchor-id="the-research-data-lifecycle-10-mins">2. The Research Data Lifecycle (10 mins)</h3>
+<p><strong>Presenters:</strong> Mason Fidino and Alex MacPhail <br> <strong>Purpose:</strong> Establish a shared understanding of the ecological data lifecycle and common language and framing this with the <strong>UWIN</strong> framework.</p>
+<p><strong>Lifecycle Stages:</strong></p>
+<ol type="1">
+<li>Data collection (fieldwork)<br>
+</li>
+<li>Data management and quality control<br>
+</li>
+<li>Processing and validation<br>
+</li>
+<li>Analysis and reporting<br>
+</li>
+<li>Publishing and sharing<br>
+</li>
+<li>Integration and scaling across projects and networks</li>
+</ol>
+</section>
+<section id="identifying-pinch-points-25-mins" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-pinch-points-25-mins">3. Identifying Pinch Points (25 mins)</h3>
+<p><strong>Presenter:</strong> Dianne Russell<br>
+<strong>Goal:</strong> Identify barriers in the research data lifecycle and explore potential solutions.</p>
+<p><strong>Activity:</strong><br>
+Participants complete a worksheet to:</p>
+<ol type="1">
+<li>Identify key pinch points in their work.</li>
+<li>Explore why these pinch points exist.</li>
+<li>Note what has been tried to address them.</li>
+<li>Share anecdotes or real-world examples.</li>
+</ol>
+<p><strong>Worksheet Questions:</strong></p>
+<ol type="1">
+<li>What are the biggest challenges you face in the data lifecycle? (List 2–3)<br>
+</li>
+<li>What barriers or limitations caused these challenges?<br>
+</li>
+<li>What tools or services could UWIN/WildTrax provide to help?<br>
+</li>
+<li>If these challenges were resolved, what projects would you be excited to pursue?</li>
+</ol>
+</section>
+<section id="a-success-story-with-the-city-of-edmonton-15-mins" class="level3">
+<h3 class="anchored" data-anchor-id="a-success-story-with-the-city-of-edmonton-15-mins">4. A Success Story with the City of Edmonton (15 mins)</h3>
+<p><strong>Presenter:</strong> Catherine Shier, City of Edmonton <br> <strong>Goal:</strong> Showcase how long-term monitoring programs can evolve through improved data management and integration.</p>
+<p><strong>Story Focus:</strong></p>
+<ul>
+<li>Transition from siloed, standalone systems to connected, living datasets.</li>
+<li>Timely data products generated within the same season of collection.</li>
+<li>Improved collaboration through shared, accessible data resources.</li>
+</ul>
+<p><strong>Key Message:</strong> WildTrax enables organizations to transform legacy datasets into valuable, connected resources that drive collaboration and innovation.</p>
+</section>
+<section id="building-a-shared-vision-for-collaboration-50-mins" class="level3">
+<h3 class="anchored" data-anchor-id="building-a-shared-vision-for-collaboration-50-mins">5. Building a Shared Vision for Collaboration (50 mins)</h3>
+<p><strong>Presenters:</strong> UWIN / ICL / WildTrax<br>
+<strong>Goal:</strong> Explore how cities and organizations can leverage WildTrax to: - Scale ecological research - Share data, tools, and infrastructure - Identify actionable next steps</p>
+<p><strong>Home Group Discussions:</strong></p>
+<ol type="1">
+<li>Share your <strong>top 2 challenges</strong> from the worksheet and scribe them on a flip chart.<br>
+</li>
+<li>As a group:
+<ul>
+<li>Identify <strong>3–4 challenge themes</strong> by connecting related challenges.<br>
+</li>
+<li>On separate chart pages, outline action steps for a UWIN research project lifecycle:
+<ul>
+<li><strong>30 days</strong></li>
+<li><strong>90 days</strong></li>
+<li><strong>1 year</strong></li>
+<li><strong>3 years</strong></li>
+</ul></li>
+</ul></li>
+<li>Map where challenge themes intersect with the roadmap timelines.</li>
+</ol>
+</section>
+<section id="wrap-up-and-closing-notes-10-mins" class="level3">
+<h3 class="anchored" data-anchor-id="wrap-up-and-closing-notes-10-mins">6. Wrap-up and Closing Notes (10 mins)</h3>
+<p><strong>Summary:</strong></p>
+<ul>
+<li>Highlight key takeaways:
+<ul>
+<li>Barriers identified (via home group report-outs)</li>
+<li>Proposed solutions</li>
+<li>Agreed-upon priorities and pilot projects</li>
+</ul></li>
+<li>Clarify next steps and accountability:
+<ul>
+<li>Assign leads or working groups</li>
+</ul></li>
+<li>Share resources:
+<ul>
+<li>WildTrax guides and documentation</li>
+<li>Data management templates</li>
+<li>Communication channels for ongoing collaboration</li>
+</ul></li>
+</ul>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
